@@ -9,7 +9,15 @@ def tokenize(sentence):
     string_punctuation = '!"#$%&\()*+,-./:;<=>?@[\\]^_`{|}~'
 
     punc_regex = re.compile(r'(['+string_punctuation+DARI_MARKER+'])')
+
     sent = punc_regex.sub(r' \1 ', ns)
+    # remove extra space after sentence end
+    sent = sent.strip()
+    # remove more than one space to single space
+    # this problem occurs when two punctuation tokens are one after another
+    extra_space_pattern = r"(\s{2,})"
+    extra_space_regex = re.compile(extra_space_pattern)
+    sent = extra_space_regex.sub(" ", sent)
 
     # single comma pattern
     # https://unicode.org/charts/PDF/U0900.pdf
