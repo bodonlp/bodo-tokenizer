@@ -8,7 +8,7 @@ with open('LICENSE', encoding="utf-8") as f:
 
 setup(
     name='bodotokenizer',
-    version='1.0.0',
+    version='0.1.0',
     description='Package for Bodo Tokenizer',
     long_description=readme,
     long_description_content_type="text/markdown",
