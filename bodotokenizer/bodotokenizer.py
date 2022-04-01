@@ -56,5 +56,5 @@ def tokenize_file(input, output):
 
 
 # if __name__ == '__main__':
-#     input_sentence = """123आरो मोनसेल' फिन होबावदो, आबौ| 'नों' गावनि123 हाखौ नागारनानै माब्ला बेसिम फैखो ?"""
+#     input_sentence = "नोंसिनि फरायसालियाव य'गा फोरोंगुरु दङ नामा?"
 #     tokenize(input_sentence)
