@@ -7,10 +7,15 @@ Bodo is one of the scheduled languages of India and belongs to the Tibeto-Burman
 Python 3.6+
 
 ### Installation:
+From source
 ```bash
 git clone https://github.com/bodonlp/bodo-tokenizer.git
 cd bodo-tokenizer
 python setup.py install
+```
+or 
+```bash
+pip install bodotokenizer
 ```
 ### Available functions:
 ```python
